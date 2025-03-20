@@ -1,0 +1,16 @@
+POST /functions.php HTTP/1.1
+Host: 10.10.181.153
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: vi-VN,vi;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 40
+Origin: http://10.10.181.153
+Connection: keep-alive
+Referer: http://10.10.181.153/login.php
+Cookie: PHPSESSID=pq5faroat8lil10f1cs2ibiu7q
+Priority: u=0
+
+username=abc*&password=abc*&function=login

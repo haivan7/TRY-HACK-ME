@@ -1,0 +1,16 @@
+[3306][mysql] host: 10.10.176.188   login: root   password: rockyou  ( hydra)
+
+MySQL [website]> select * from users;
++----+----------+--------------------------------------------------------------+---------------------+
+| id | username | password                                                     | created_at          |
++----+----------+--------------------------------------------------------------+---------------------+
+|  1 | Adrian   | $2y$10$tLzQuuQ.h6zBuX8dV83zmu9pFlGt3EF9gQO4aJ8KdnSYxz0SKn4we | 2021-10-20 02:43:42 |
++----+----------+--------------------------------------------------------------+---------------------+
+Adrian : tigger
+
+define('DB_USERNAME', 'adrian');
+define('DB_PASSWORD', 'P@sswr0d789!');
+
+adrian: theettubrute! (ssh)
+ 10.8.34.3:8000/pspy64
+

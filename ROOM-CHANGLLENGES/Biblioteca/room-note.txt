@@ -1,0 +1,15 @@
+8000/tcp open  http    syn-ack Werkzeug httpd 2.0.2 (Python 3.8.10)
+
+| id | email              | password       | username |
++----+--------------------+----------------+----------+
+| 1  | smokey@email.boop  | My_P@ssW0rd123 | smokey   |
+
+root         652  0.0  0.0   6812  2784 ?        Ss   09:28   0:00 /usr/sbin/cron -f
+
+smokey       719  0.0  0.0   2608   596 ?        Ss   09:28   0:00      _ /bin/sh -c /usr/bin/python3 /var/opt/app/app.py
+
+app.secret_key = '$uperS3cr3tK3y'                                                                                                                                            
+                                                                                                                                                                             
+app.config['MYSQL_HOST'] = 'localhost'                                                                                                                                       
+app.config['MYSQL_USER'] = 'smokey'                                                                                                                                          
+app.config['MYSQL_PASSWORD'] = '$tr0nG_P@sS!'     

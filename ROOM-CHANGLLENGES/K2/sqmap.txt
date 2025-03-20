@@ -1,0 +1,16 @@
+POST /dashboard HTTP/1.1
+Host: admin.k2.thm
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: vi-VN,vi;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 10
+Origin: http://admin.k2.thm
+Connection: keep-alive
+Cookie: session=eyJhZG1pbl91c2VybmFtZSI6ImphbWVzIiwiaWQiOjEsImxvZ2dlZGluIjp0cnVlfQ.Z7Lerg.VrufzNQ8Ww6Zvpmv-1qADub_hJ0
+Referer: http://admin.k2.thm/dashboard
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+title=help*

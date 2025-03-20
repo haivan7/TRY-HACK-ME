@@ -1,0 +1,26 @@
+
+Brother,
+
+I've set up VNC on this machine under jacobson's account. We don't know his loyalty, but should assume hostile.
+Problem is he's good - no doubt he'll find it... a hasty defense, but since we won't be here long, it should work.
+
+The VNC login is the following message, 'smashthestate', hmac'ed with my username from the 'bad actors' list (lol).
+Use md5 for the hmac hashing algo. The first 8 characters of the final hash is the VNC password. - JL
+
+
+311781a1  ( vnc)
+
+/home/ajacobson/.vnc/passwd
+/usr/bin/python3 /usr/share/system-config-printer/applet.py
+
+/etc/vnc.conf
+/etc/ldap
+
+/opt/Chicago95/.git
+
+"directive" = "cat /var/www/html/badactors.txt"
+
+badactors-list
+
+echo YXByaWVzdAphcXVpbmFzX256CmNvb2tpZWNhdApjcmFrcwpjdXJsZXkKZGFya21hdHRlcm1hdHQKZXRvZGQKZ2ZveWxlCmdyYW5rCmdzeW1lCmhhegpoZ3JpbWFsZGkKaGhhbGwKaHF1aW5uemVsbAppbmZvc25la256CmphbGxyZWQKamhlYXJzdApqbGViZWRldgpqb29sZWVhaApqdWFubnNmCmtpbGxlcl9hbmRyZXcKbGFjaGxhbmQKbGVlc2gKbGV2ZWxiZWFtCm1hdHR5cGF0dGF0dHkKbWVtbjBwcwpuaGFzCm5vdHN1cwpvZW56aWFuCnJvc2V5Y3Jvc3MKc2phc3BlcnNvbgpzd2VldGNoYXJpdHkKdGZyYXNlCnRob21fc2V2ZW4KdHRvbmcK | base64 -d > /var/www/html/badactors.txt
+

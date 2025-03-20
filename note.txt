@@ -1,0 +1,31 @@
+
+1.TTY SHELL
+
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+python -c 'import pty; pty.spawn("/bin/bash")'
+Ctrl-Z
+
+# In parrot 
+
+stty -a
+echo $TERM
+
+
+stty raw -echo && fg
+
+
+# In reverse shell
+export TERM=xterm-256color
+export SHELL=bash
+reset
+stty rows 37 columns 190 
+
+
+# khôi phục shell
+stty sane
+
+
+pspy64
+
+
